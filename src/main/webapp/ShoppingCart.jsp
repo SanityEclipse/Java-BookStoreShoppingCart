@@ -34,9 +34,9 @@
 					<tr>
 						<form name="cart_form" action="/cart/update">
 							<input type="hidden" name="index"
-								value="<c:out value='${loop.index }' /> " />
-							<td>${ cartItem.getTitle() }</td>
-							<td>${ cartItem.getAuthor() }</td>
+								value="<c:out value='${loop.index }' />" />
+							<td> ${ cartItem.getTitle() } </td>
+							<td> ${ cartItem.getAuthor() } </td>
 							<td><fmt:formatNumber value="${ cartItem.getPrice() }"
 									type="currency" /></td>
 							<td><input type="number" name="quantity" min="1" max="50"
